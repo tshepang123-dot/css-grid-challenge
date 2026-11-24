@@ -133,3 +133,28 @@ article p {
     grid-column: span 2;
   }
 }
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel   daniel   jonathan kira"
+      "jeanette patrick  patrick  kira";
+  }
+
+  .Daniel-card {
+    grid-area: daniel;
+  }
+  .Johna-card {
+    grid-area: jonathan;
+  }
+  .kira-card {
+    grid-area: kira;
+  }
+  .Jea-card {
+    grid-area: jeanette;
+  }
+  .Patrick-card {
+    grid-area: patrick;
+  }
+}
